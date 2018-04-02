@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript slider</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <audio id="sound" autoplay>
+            <source src="carrossel.mp3" type="audio/mp3">
+        </audio>
+
+
+        <div id="slider_container">
+
+            <div id="navigator">
+                <div class="nav_line"></div>
+                <div class="nav_dot_container"><div class="nav_dot selected_dot" data-index="0"></div></div>
+                <div class="nav_dot_container"><div class="nav_dot" data-index="1"></div></div>
+                <div class="nav_dot_container"><div class="nav_dot" data-index="2"></div></div>
+                <div class="nav_dot_container"><div class="nav_dot" data-index="3"></div></div>
+                <div class="nav_line"></div>
+            </div>
+
+            <div id="slider_wrap">
+                <div id="s1" class="slide" data-visibility = "visible">
+                    <div class="slide_visible">
+                        <div class="slide_img_container">
+                            <img class="slide_img" src="img/clerigos.jpg">
+                        </div>
+
+                        <div class="slide_info">
+                            <div class="slide_title">Clérigos</div>
+                            <div class="slide_text">A Igreja e Torre dos Clérigos (século XVIII) é um notável conjunto arquitetónico situado na cidade do Porto, Portugal, sendo considerado o ex-libris dessa cidade.
+
+                                O conjunto localiza-se no topo da Rua dos Clérigos, entre as ruas de São Filipe Néri (ou São Filipe Nery) e da Assunção. Integra três elementos principais: a Igreja dos Clérigos, a Torre dos Clérigos e a Casa da Irmandade, que liga a igreja e a torre e em tempos acolheu os outros serviços da Irmandade dos Clérigos. Projetado pelo arquiteto Nicolau Nasoni.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="s2" class="slide" data-visibility = "hidden">
+                    <div class="slide_visible">
+                        <div class="slide_img_container">
+                            <img class="slide_img" src="img/praca_batalha.jpg">
+                        </div>
+
+                        <div class="slide_info">
+                            <div class="slide_title">Praça da Batalha</div>
+                            <div class="slide_text">No lado oriental da praça podemos ver uma palacete brasonado mandado construir nos fins do século XVIII por José Anastácio da Silva da Fonseca, cavaleiro da Casa Real. Na altura do Cerco do Porto os proprietários pró-miguelistas abandonaram o palacete, o que fez com que o governo liberal lá se instalasse, usando-o para várias instituições públicas e hospital de sangue. </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="s3" class="slide" data-visibility = "hidden">
+                    <div class="slide_visible">
+                        <div class="slide_img_container">
+                            <img class="slide_img" src="img/jardim_botanico.jpg">
+                        </div>
+
+                        <div class="slide_info">
+                            <div class="slide_title">Jardim Botânico</div>
+                            <div class="slide_text">Em 1895, João Henrique Andresen adquire a Quinta do Campo Alegre. Será este comerciante de vinho do Porto que recupera os jardins, impondo o estilo romântico dominante na época. Dois membros desta ilustre família da burguesia portuense tornaram-se escritores famosos: Sophia de Mello Breyner e Ruben A.. Este último viveu mesmo na Quinta do Campo Alegre, sendo as suas memórias um importante registo histórico da época.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="s4" class="slide" data-visibility = "hidden">
+                    <div class="slide_visible">
+                        <div class="slide_img_container">
+                            <img class="slide_img" src="img/ponte_dluis.jpg">
+                        </div>
+
+                        <div class="slide_info">
+                            <div class="slide_title">Ponte de D.Luís</div>
+                            <div class="slide_text">A Ponte Luís I ou Luiz I, é uma ponte em estrutura metálica com dois tabuleiros, construída entre os anos 1881 e 1888, ligando as cidades do Porto e Vila Nova de Gaia (margem norte e sul, respetivamente) separadas pelo rio Douro, em Portugal.
+
+                                Esta construção veio substituir a antiga ponte pênsil que existia no mesmo local e foi realizada mediante o projeto do engenheiro belga Théophile Seyrig, que já tinha colaborado anteriormente com Gustave Eiffel na construção da Ponte de D. Maria Pia, ferroviária.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="animation_wrap">
+                <div class="animation_container">
+                    <div class="anim_box selected_button" data-index="0">Fade</div>
+                </div>
+                <div class="animation_container">
+                    <div class="anim_box" data-index="1">Slide</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="timer_container">
+            <div id="timer"></div>
+        </div>
+
+    </body>
+</html>
